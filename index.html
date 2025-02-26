@@ -1,71 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HyM Health - Tu Salud, Nuestra Prioridad</title>
+    <title>HyM Health - Enlaces y Redes Sociales</title>
     <link rel="icon" type="image/png" href="logo.png">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-<body class="bg-[#BADECD]">
-    <div class="min-h-screen">
-        <!-- Hero Section -->
-        <header class="container mx-auto px-4 py-16 text-center">
-            <div class="max-w-3xl mx-auto space-y-6">
-                <img src="logo.png" alt="HyM Health Logo" class="mx-auto w-32 h-auto">
-                <h1 class="text-5xl font-bold text-blue-800 animate-bounce">
-                    Tu salud, nuestra prioridad
-                </h1>
-                <p class="text-xl text-gray-700">
-                    Conectamos tu bienestar con los mejores profesionales de la salud
-                </p>
-                <a href="https://dental-kids.vercel.app/" target="_blank" 
-                   class="inline-block bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-3 rounded-md transition transform hover:scale-105 shadow-lg">
-                    Comienza ahora <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-        </header>
 
-        <!-- Redes Sociales -->
-        <section class="container mx-auto px-4 py-16 text-center">
-            <h2 class="text-3xl font-bold text-blue-800 mb-6">Síguenos en nuestras redes</h2>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://dental-kids.vercel.app/" target="_blank" class="bg-blue-500 text-white py-4 px-6 rounded-lg text-xl font-bold hover:bg-blue-700 transition transform hover:scale-105 flex items-center justify-center shadow-md">
-                    <i class="fas fa-globe mr-2"></i> Web
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61573738641294" target="_blank" class="bg-blue-700 text-white py-4 px-6 rounded-lg text-xl font-bold hover:bg-blue-900 transition transform hover:scale-105 flex items-center justify-center shadow-md">
-                    <i class="fab fa-facebook mr-2"></i> Facebook
-                </a>
-                <a href="https://e-comerce-firease-next.vercel.app/" target="_blank" class="bg-pink-500 text-white py-4 px-6 rounded-lg text-xl font-bold hover:bg-pink-700 transition transform hover:scale-105 flex items-center justify-center shadow-md">
-                    <i class="fas fa-shopping-cart mr-2"></i> E-Commerce
-                </a>
-                <a href="https://www.instagram.com/hym_health/" target="_blank" class="bg-pink-600 text-white py-4 px-6 rounded-lg text-xl font-bold hover:bg-pink-800 transition transform hover:scale-105 flex items-center justify-center">
-                    <i class="fab fa-instagram mr-2"></i> Instagram
-                </a>
-                <a href="https://wa.me/+51984767358" target="_blank" class="bg-green-500 text-white py-4 px-6 rounded-lg text-xl font-bold hover:bg-green-700 transition transform hover:scale-105 flex items-center justify-center shadow-md">
-                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
-                </a>
-            </div>
-        </section>
+<body class="gradient-bg min-h-screen flex flex-col items-center">
+    <div class="container max-w-md mx-auto px-4 py-10 flex flex-col items-center">
+        <!-- Logo y título -->
+        <div data-aos="fade-down" data-aos-duration="1000" class="text-center mb-8">
+            <img src="logo.png" alt="HyM Health Logo" class="logo mx-auto w-24 h-24 float-animation mb-4">
+            <h1 class="text-3xl font-bold text-white mb-2">HyM Health</h1>
+            <p class="text-white text-opacity-80">Tu salud, nuestra prioridad</p>
+        </div>
 
-        <!-- CTA Section -->
-        <section class="bg-green-500 py-16 text-center">
-            <h2 class="text-3xl font-bold text-white mb-6 animate-pulse">
-                Comienza tu viaje hacia una mejor salud
-            </h2>
-            <a href="https://dental-kids.vercel.app/#contact" target="_blank"
-               class="inline-block bg-white text-green-600 hover:bg-gray-100 font-semibold px-8 py-3 rounded-md transition transform hover:scale-105 shadow-md">
-                Registrarme ahora
+        <!-- Enlaces -->
+        <div class="w-full space-y-4 mb-8">
+            <!-- Sitio Web -->
+            <a href="https://dental-kids.vercel.app/" target="_blank" data-aos="fade-up" data-aos-delay="100"
+                class="social-link block w-full bg-white bg-opacity-95 rounded-xl p-4 flex items-center text-blue-800 font-semibold shadow-lg">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <span class="flex-grow">Sitio Web Oficial</span>
+                <i class="fas fa-chevron-right opacity-50"></i>
             </a>
-        </section>
+
+            <!-- E-Commerce -->
+            <a href="https://e-comerce-firease-next.vercel.app/uikit/list" target="_blank" data-aos="fade-up" data-aos-delay="150"
+                class="social-link block w-full bg-white bg-opacity-95 rounded-xl p-4 flex items-center text-pink-500 font-semibold shadow-lg">
+                <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <span class="flex-grow">Tienda Online</span>
+                <i class="fas fa-chevron-right opacity-50"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61573738641294" target="_blank" data-aos="fade-up"
+                data-aos-delay="200"
+                class="social-link block w-full bg-white bg-opacity-95 rounded-xl p-4 flex items-center text-blue-600 font-semibold shadow-lg">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <span class="flex-grow">Facebook</span>
+                <i class="fas fa-chevron-right opacity-50"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/hym_health/" target="_blank" data-aos="fade-up" data-aos-delay="250"
+                class="social-link block w-full bg-white bg-opacity-95 rounded-xl p-4 flex items-center text-pink-600 font-semibold shadow-lg">
+                <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-4">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span class="flex-grow">Instagram</span>
+                <i class="fas fa-chevron-right opacity-50"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+51984767358" target="_blank" data-aos="fade-up" data-aos-delay="300"
+                class="social-link block w-full bg-white bg-opacity-95 rounded-xl p-4 flex items-center text-green-500 font-semibold shadow-lg">
+                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <span class="flex-grow">WhatsApp</span>
+                <i class="fas fa-chevron-right opacity-50"></i>
+            </a>
+
+            <!-- Contacto Directo -->
+            <a href="https://dental-kids.vercel.app/#contact" target="_blank" data-aos="fade-up" data-aos-delay="350"
+                class="social-link block w-full bg-white bg-opacity-95 rounded-xl p-4 flex items-center text-purple-600 font-semibold shadow-lg">
+                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <span class="flex-grow">Contacto</span>
+                <i class="fas fa-chevron-right opacity-50"></i>
+            </a>
+        </div>
+
+        <!-- CTA Principal -->
+        <a href="https://dental-kids.vercel.app/" target="_blank" data-aos="zoom-in" data-aos-delay="400"
+            class="mb-8 px-8 py-4 bg-white text-blue-800 rounded-full font-bold shadow-lg hover:shadow-xl transition transform hover:scale-105">
+            Comienza ahora <i class="fas fa-arrow-right ml-2"></i>
+        </a>
 
         <!-- Footer -->
-        <footer class="bg-gray-900 text-white py-8 text-center">
-            <p>&copy; 2025 Jose Jeampier Jara salas. Todos los derechos reservados.</p>
+        <footer data-aos="fade-up" data-aos-delay="450" class="text-center text-white text-sm opacity-70">
+            <p>&copy; 2025 Jose Jeampier Jara Salas</p>
+            <p>Todos los derechos reservados</p>
         </footer>
     </div>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+
 </body>
+
 </html>
